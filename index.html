@@ -30,7 +30,7 @@
   </head>
   <body class="bg-[#181719] text-white font-body">
     <!-- Navar Starts -->
-    <section class="overflow-hidden relative">
+    <section class="overflow-hidden">
       <div
         class="flex justify-between lg:items-center lg:container mx-10 lg:mx-auto mt-12"
       >
@@ -40,20 +40,45 @@
           </h1>
         </div>
         <div>
-          <ul class="flex space-x-8 text-xl invisible">
+          <ul class="flex space-x-8 text-xl invisible md:visible lg:visible">
             <li>
               <a href="#" class="underline underline-offset-8 font-bold"
                 >Home</a
               >
             </li>
+        
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <i
+            class="fa-solid fa-bars fa-xl text-white absolute top-16 right-8 menu lg:hidden md:hidden"
+          ></i>
+        </div>
+      </div>
+
+      <!-- Navbar Ends -->
+      <!-- Mobile Menu -->
+      <div
+        class="h-screen hidden menu-bar bg-black text-white absolute z-10 top-0 right-0 w-full lg:hidden md:hidden sm:hidden text-end"
+      >
+        <div class="flex-col justify-end mx-4 my-8 space-y-8">
+          <i class="fa-solid fa-x cursor-pointer" id="close"></i>
+
+          <ul
+            class="space-y-8 uppercase font-heading font-semibold text-center"
+          >
+            <a href="#" class="underline underline-offset-8 font-bold"
+                >Home</a
+              >
+            </li>
+        
             <li><a href="#">Collection</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
-
-      <!-- Navbar Ends -->
       <!-- Hero Section Starts -->
       <div
         class="md:block lg:flex lg:container block mx-10 lg:mx-auto lg:my-36 my-12"
@@ -109,5 +134,9 @@
       </div>
       <!-- Hero Section Ends -->
     </section>
+    <div class="text-center invisible md:visible lg:visible">
+      <p>created by <a href="https://github.com/themujahidkhan">themujahidkhan</a> - devChallenges.io</p>
+    </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
